@@ -1,0 +1,143 @@
+body {
+	background-color: #ebebeb;
+}
+
+.toma-de-asistencia {
+	padding: 20px;
+}
+
+.informacion {
+	margin-bottom: 20px;
+}
+
+.info-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.info-box {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	flex-grow: 1;
+}
+
+.info-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.info-value {
+	margin: 0;
+}
+
+.lista-asistencia {
+	margin-bottom: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid #ccc;
+	padding: 8px;
+	text-align: left;
+}
+
+/* Estilos para los iconos */
+.fa-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-check,
+.fa-times {
+	font-size: 24px;
+	margin: 0 5px; /* Espacio entre los iconos */
+}
+
+.fa-check {
+	color: green;
+}
+
+.fa-times {
+	color: red;
+}
+
+.fa-check.selected-icon,
+.fa-times.selected-icon {
+	filter: brightness(
+		100%
+	); /* Mantiene el brillo original del icono seleccionado */
+}
+
+.fa-check.unselected-icon,
+.fa-times.unselected-icon {
+	filter: brightness(10%); /* Reduce el brillo del icono no seleccionado */
+}
+
+/* Estilo de los inputs */
+.inputDate {
+	padding: 5px;
+	border: none; /* Quita el borde */
+	border-bottom: 1px solid #ccc; /* Agrega solo el borde inferior */
+	font-size: 14px;
+	width: 90%;
+	background-color: #ebebeb;
+	font-family: Arial, sans-serif;
+	border-radius: 0.5px;
+}
+
+.inputDate::-webkit-calendar-picker-indicator {
+	color: #333333;
+	font-size: 18px; /* Establece el tamaño del icono de calendario */
+	border-radius: 4px;
+	padding: 5px;
+	cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el icono */
+}
+
+.inputDate:focus {
+	background-color: #ebebeb; /* Cambia el color de fondo al enfocar */
+}
+
+.input {
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid #ccc; /* Borde inferior */
+	font-size: 14px;
+	width: 90%;
+	background-color: #ebebeb;
+	font-family: Arial, sans-serif;
+	margin-top: 7px; /* Margen superior */
+	border-radius: 0.5px;
+}
+
+/* Estilos para los botones */
+.botones button {
+	padding: 10px 20px; /* Ajusta el padding según sea necesario */
+	border: none; /* Quita el borde */
+	color: white; /* Color del texto */
+	text-align: center; /* Alinea el texto al centro */
+	text-decoration: none; /* Quita cualquier subrayado */
+	display: inline-block; /* Hace que los botones se muestren en línea */
+	font-size: 16px; /* Tamaño de fuente */
+	margin-left: 10px; /* Espacio entre botones */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos para el botón de guardar */
+.guardar {
+	background-color: #3faf12; /* Cambia el color de fondo */
+}
+
+/* Estilos para el botón de cancelar */
+.cancelar {
+	background-color: #f44336; /* Cambia el color de fondo */
+}
