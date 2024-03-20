@@ -135,10 +135,10 @@ function CreateAttendance() {
 						))}
 					</tbody>
 				</table>
-			</div>
-			<div className="botones">
-				<button className="cancelar">Cancelar</button>
-				<button className="guardar">Guardar Asistencia</button>
+				<div className="botones">
+					<button className="cancelar">Cancelar</button>
+					<button className="guardar">Guardar Asistencia</button>
+				</div>
 			</div>
 		</div>
 	);

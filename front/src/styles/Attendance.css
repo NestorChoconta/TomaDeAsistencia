@@ -42,10 +42,9 @@ table {
 	border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
 	border: 1px solid #ccc;
-	padding: 8px;
+	padding: 8px 50px;
 	text-align: left;
 }
 
@@ -122,14 +121,15 @@ td {
 .botones button {
 	padding: 10px 20px; /* Ajusta el padding según sea necesario */
 	border: none; /* Quita el borde */
-	color: white; /* Color del texto */
-	text-align: center; /* Alinea el texto al centro */
-	text-decoration: none; /* Quita cualquier subrayado */
+	color: white; 
+	text-align: center; 
+	text-decoration: none; 
 	display: inline-block; /* Hace que los botones se muestren en línea */
-	font-size: 16px; /* Tamaño de fuente */
+	font-size: 16px; 
 	margin-left: 10px; /* Espacio entre botones */
-	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	cursor: pointer; 
 	border-radius: 5px; /* Borde redondeado */
+	margin-top: 20px;
 }
 
 /* Estilos para el botón de guardar */
