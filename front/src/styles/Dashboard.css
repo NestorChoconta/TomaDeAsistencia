@@ -1,0 +1,71 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: -10%;
+    margin-left: -15%;
+    margin-right: -15%;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-right: 25%;
+    flex: 1;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: calc(50% - 10px);
+    text-decoration: none;
+    border: 1px solid #b1b1b1;
+}
+
+.box:hover,
+.box.active {
+    background-color: #ddd;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    font-size: 18px; 
+    color: #333; 
+}
+
+.box p {
+    color: #666;
+    font-size: 14px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Dashboard.css */
+.menu-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.menu-icon{
+    height: 570px;
+    width: 1000px;
+    margin-left: -950px;
+    margin-right: 30px;
+    border-radius: 20px;
+}

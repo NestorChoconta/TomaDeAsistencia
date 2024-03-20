@@ -9,32 +9,28 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-header">
-        <h2>Bienvenido!!</h2>
-        <p>Por favor, inicia sesión para continuar</p>
-      </div>
-      <form className="login-form">
-        <div className="form-control">
-          <label htmlFor="email">Correo:</label>
-          <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+      <div className="login-container">
+        <div className="login-header">
+          <h2>Bienvenido!!</h2>
+          <p>Por favor, inicia sesión para continuar</p>
         </div>
-        <div className="form-control">
-          <label htmlFor="password">Contraseña:</label>
-          <div className="password-container">
-            <input
-              type={showPassword ? 'text' : 'password'}
-              id="password"
-              name="password"
-              placeholder="Contraseña"
-              required
-            />
-            <span className="toggle-password" onClick={togglePassword}></span>
+        <form className="login-form">
+          <div className="form-control">
+            <label htmlFor="email">Correo:</label>
+            <input type="email" id="email" name="email" placeholder="Digita tu correo electrónico"  />
           </div>
-        </div>
-        <button type="submit">Iniciar Sesión</button>
-      </form>
-    </div>
+          <div className="form-control">
+            <label htmlFor="password">Contraseña:</label>
+            <div className="password-container">
+              <input
+                type={showPassword ? 'text' : 'password'} id="password" name="password" placeholder="Digita tu contraseña"
+              />
+              <span className="toggle-password" onClick={togglePassword}></span>
+            </div>
+          </div>
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+      </div>
   );
 }
 
